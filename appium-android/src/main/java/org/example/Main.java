@@ -32,20 +32,20 @@ public class Main {
 
         capabilities.setCapability("platformName", "Android");
 
-        capabilities.setCapability("platformVersion", "11");
+        capabilities.setCapability("platformVersion", "8.1");
 
-        capabilities.setCapability("deviceName", "Black shark 4");
+        capabilities.setCapability("deviceName", "samsung_galaxy_web_7.1.1");
 
 
 
 //        capabilities.setCapability("appPackage", "com.facebook.katana");
-        capabilities.setCapability("appPackage", "com.instagram.android");
+        capabilities.setCapability("appPackage", "com.android.chrome");
 
-        capabilities.setCapability("appActivity", "com.instagram.mainactivity.MainActivity");
+        capabilities.setCapability("appActivity", "com.google.android.apps.chrome.Main");
 
         capabilities.setCapability("noReset", true);
 
-        AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        AndroidDriver driver = new AndroidDriver(new URL("http://34.145.252.106:4444/wd/hub"), capabilities);
 
         driver.manage().timeouts().implicitlyWait( Duration.of(5, TimeUnit.SECONDS.toChronoUnit()));
 
